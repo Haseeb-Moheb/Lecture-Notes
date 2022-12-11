@@ -74,7 +74,7 @@ if(!rain) {
     console.log('Seems to be a clear day');
 }
 
-let grade = 88;
+let grade = 88; 
 grade = 76;
 // grade = 0;
 
@@ -117,7 +117,7 @@ let officeCharacter = "Michael";
 
 switch(officeCharacter) {
     case "Michael":
-        console.log("My mind is going a mile an hour.");
+        console.log("My mind is going a mile an hour."); 
         break;
     case "Dwight":
         console.log("Perfectenschlag");
@@ -192,4 +192,6 @@ if(newNum == 0) {
     (newNum < 0) ? 
     console.log('hi') : 
     console.log('goodbye again');
+
+    
 

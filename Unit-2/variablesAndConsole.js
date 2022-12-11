@@ -1,6 +1,3 @@
-
-
-
 // Variable Declaration
 let x;
 
@@ -13,4 +10,6 @@ let last = 'Smith';
 
 let full = first + last;
 
-console.log('Declaration:', x);
+console.log('Declaration:', first, last); 
+
+

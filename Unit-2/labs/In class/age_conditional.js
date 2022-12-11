@@ -8,6 +8,10 @@
     If the age is at least 25, console.log 'You can rent a car!'
 */
 
+/*
+    Write a ternary that does the same thing as the age challenge
+*/
+
 let age = 25;
 
 if(age >= 25) {
@@ -20,7 +24,7 @@ else if(age >= 18) {
     console.log('You can vote.');
 } 
 else if(age <= 17) {
-    console.log(' Sorry, you'r too young to do anything.'); '
+    console.log('Sorry, you'r too young to do anything.'); '
 }
  
 
