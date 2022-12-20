@@ -26,3 +26,28 @@ do {
 
 console.log(number);
 // continues 
+
+
+
+function generateRandomInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+  }   
+
+  var randNum =  Math.floor(Math.random() * 10) + 1;
+console.log(randNum)
+
+
+ 
+function generateRandomInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+ 
+// Generate random number between 1 to 10 
+console.log(generateRandomInteger(1,10))
+
+// Generate random number between 11 to 20
+console.log(generateRandomInteger(11,20))
+
+// Generate random number between 21 to 30
+console.log(generateRandomInteger(21,30)) 
+ 

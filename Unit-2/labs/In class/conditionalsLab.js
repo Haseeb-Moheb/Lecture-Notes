@@ -112,3 +112,43 @@ switch(randomNumber) {
 }
 
 console.log(value, randomNumber);
+
+ 
+
+
+
+function generateRandomInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+    let max = lower;
+  }
+   
+  // Generate random number between 1 to 10
+  console.log(generateRandomInteger(1,lower))
+
+  // Generate random number between 11 to 20
+  console.log(generateRandomInteger(11,20))
+
+  // Generate random number between 21 to 30
+  console.log(generateRandomInteger(21,30))
+
+  let nnum = Math.floor((Math.random() * 100)+1);
+  
+console.log('The Random Number that was generated is: ', nnum);
+let min = 1;
+let max = 100; 
+lower < "nnum";
+correct = "nnum"
+higher > "nnum";
+
+if(nnum == correct) {
+    console.log("That's it!"); 
+}
+else if (nnum == lower){
+    console.log(Math.floor((Math.random() * nnum)+1))
+}
+
+
+    let value = oneHundred / num;
+    
+    // console.log(`100 divided by ${num} is ${value}.`);
+    console.log('100 divided by ' + num + " is " + value);
