@@ -47,8 +47,8 @@ hi();  // invoking our function hi()
 hello(); // Expression variable name is required to run function
 // hey(); // doesn't run
 
-// console.log(hello);
-// console.log(hello());
+console.log(hello);
+console.log(hello());
 
 // Create a function that, when invoked, lists out the numbers 1-10
 
