@@ -4,7 +4,7 @@ const table = document.querySelector('tbody');
 let animals = [];
 
 //TODO Event Listener
-form.addEventListener('submit', function(e) {
+form.addEventListener('submit', function(e) { 
     e.preventDefault();
     // console.log(e);
     // console.log(form[0].value);

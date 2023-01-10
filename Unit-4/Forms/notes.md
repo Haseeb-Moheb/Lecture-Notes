@@ -4,7 +4,7 @@
   - anchors
 
 # Form
-- Group input fields together
+- Group input fields together 
 - ```onsubmit``` will gather data within the input fields and pass it on.
 - Methods:
   - Types: (CRUD)
@@ -27,4 +27,3 @@ When a form is submitted, it automatically refreshes our browser.
 ```value``` is what is held within th einput when submitted
   - This gets populated when a user types into it (depending on the field)
 
-  

@@ -6,7 +6,7 @@ let numberOfRolls = 0; // starting count for our rolls allowed (1-3);
 
 //* Dictionary
 // 1 = 100, 2 = 20, 3 = 30, etc.
-const scoring = {
+const scoring = { 
     '1' : 100,
     '2' : 20,
     '3' : 30,

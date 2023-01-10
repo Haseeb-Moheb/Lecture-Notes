@@ -119,7 +119,7 @@ const generalLocations = {
 
 const locations = {
     ...simpsonCharacters,
-    dmv: ['Patty','Selma'],
+    dmv: ['Patty','Selma'], 
     ...generalLocations
 };
 

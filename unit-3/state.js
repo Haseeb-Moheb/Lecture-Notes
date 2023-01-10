@@ -1,3 +1,4 @@
+
 //! Dictionaries
 
 const listGames = (system) => { 
@@ -21,11 +22,10 @@ console.log(listGames(userInput));
 // console.log(listGames('Nintendo'));
 
 let sampleObj = {
-    sample: 'value',
-    "other sample": 'value 2'
+    sample: 'value', "other sample": 'value 2'
 }
 
-const stateAbbrivation = {
+const stateAbbrivation = { 
     alaska: 'ak',
     delaware: 'de',
     hawaii: 'hi',
