@@ -15,9 +15,9 @@ app.use(express.json());
 // mongodb.once(open, () => console.log('Connected to Mongo')); //* Unit 6
 // mongoose.set('strictQuery', true); //* Unit 6
 
-// app.uses('/user', userController);  //* Unit 6
+// app.uses('/user', userController);  //* Unit 6 
 
-app.use('/broken-app-challenge', routeController); 
+app.use('/broken-app-challenge', routeController);  
 
 app.listen(PORT, () => console.log(`App is running on: ${PORT}`));
 
