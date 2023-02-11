@@ -55,7 +55,7 @@ router.get('/', (req, res) => {
     //ex: localhost:4000/routes/
 
     try {
-        res.status(200).json({
+        res.status(200).json({ 
             results: db
         })
     
