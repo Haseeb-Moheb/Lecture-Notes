@@ -1,7 +1,7 @@
 //* This whole file is for Unit 6 Challenge
 const mongoose;
 
-const User = new mongoose.Schema({
+const User = new mongoose.Schema({ 
     userName = {
         type: String,
         required: true,

@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express'); 
 const app = express();
-// const mongoose = require('mongoose'); //* Unit 6
+// const mongoose = require('mongoose'); //* Unit 6 
 const PORT = process.env.PORT || 4002;
 // const MONGO = process.MONGO; //* Unit 6
 

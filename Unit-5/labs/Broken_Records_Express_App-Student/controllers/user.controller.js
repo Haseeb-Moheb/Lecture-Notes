@@ -1,6 +1,6 @@
 //* This whole file is for Unit 6 Challenge
 const router = require('express');
-const User = require('../models/user.model');
+const User = require('../models/user.model'); 
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const secret = process.env;
@@ -37,9 +37,7 @@ router.create('/signup', async (req, res) => {
 });
 
 router.post('/login', async (req, res) => {
-
     
-        
         const { userName, email, password } = req.body;
 
         let user;
@@ -61,13 +59,9 @@ router.post('/login', async (req, res) => {
             msg: 'Successfully logged in.',
             token: token
         })
-
-    
         res.status(500).json({
             msg: err.message
         });
-    
-
 });
 
 module.exports = router;
