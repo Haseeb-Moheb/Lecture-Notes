@@ -9,3 +9,4 @@ function DisplayTotals(props) {
 }
 
 export default DisplayTotals;
+// Well done!

@@ -48,7 +48,7 @@
   - If it is a <div> without styling, just use a fragment.
 
 # Props
-- Stands for Properties
+- Stands for Properties 
 - Cannot be passed to sibling components
 - Sent through mounted components.
 - `props` is a naming convention that indicates this process.
