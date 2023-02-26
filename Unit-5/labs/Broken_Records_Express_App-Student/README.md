@@ -29,7 +29,7 @@ Once all the available routes are functioning and no errors are being thrown, yo
 - `/check`
 - `/all-from-database`
 - `/[parameter of an id]`
-  - *hint ~ we need to use a variable denoted by a [:]*
+  - *hint ~ we need to use a variable denoted by a [:]* 
 
 ### Associated Files:
 - `app.js`

@@ -48,7 +48,61 @@
   - If it is a <div> without styling, just use a fragment.
 
 # Props
-- Stands for Properties 
+- Stands for Properties
 - Cannot be passed to sibling components
 - Sent through mounted components.
 - `props` is a naming convention that indicates this process.
+- Passed as an object
+
+```jsx
+<Component propKey={propValue} />
+```
+```jsx
+// component that gets props
+function Component(props) {}
+```
+
+### React Extension
+**React Snippets**
+[docs](https://github.com/ults-io/vscode-react-javascript-snippets/blob/HEAD/docs/Snippets.md)
+- Quick Commands:
+  - `rfce`
+    - React Functional Component Export
+  - `rfc`
+    - React Function Component (default export)
+
+# State
+- Helps modify data based on a condition
+  - ex:
+    - offline/online status
+    - session token value
+  - Utilizes types of hooks
+  - Requires to be imported.
+
+`import { useState } from 'react';`
+
+## useState()
+- Structure:
+  - `keyword [ variable, function ] = hook(initial value);`
+  - The Process:
+
+```js
+function useState(startingData) {
+  function updateState(newData) {
+    startingData = newData
+  }
+
+  return [startingData, updateState]
+}
+```
+
+## Re-Rendering
+- we can use a callback function to help with rendering processes.
+- useState can take raw value but also a callback function.
+
+ex:
+```jsx
+const [ count, setCount ] = useState(0); // raw value
+const [ count, setCount ] = useState(() => 0); // CB Function
+```
+- Callback functions renders initial value once.
