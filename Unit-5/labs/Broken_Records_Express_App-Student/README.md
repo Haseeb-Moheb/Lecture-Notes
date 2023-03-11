@@ -2,7 +2,7 @@
 
 This debug challenge is to provide practice in finding all the break points of a functioning express application. This is meant to tested through **Postman** and should result in either updating the local json file associated with the mock database or updating documents within [MongoDB](https://www.mongodb.com/).
 
-This challenge is broken into two parts, **Unit 5** and **Unit 6**. Upon cloning this repo, the sections required to help run Unit 6 have been commented out and noted. When you are ready to work through that portion of the debug session, simply uncomment out what is currently there and start testing.
+This challenge is broken into two parts, **Unit 5** and **Unit 6**. Upon cloning this repo, the sections required to help run Unit 6 have been commented out and noted. When you are ready to work through that portion of the debug session, simply uncomment out what is currently there and start testing. 
 
 ## To Start
 - `npm install` all the dependencies.
@@ -41,7 +41,7 @@ Once all the available routes are functioning and no errors are being thrown, yo
 1. Add a route to delete a record within `db.json`.
 
 ---
-## Unit 6 Challenge
+## Unit 6 Challenge 
 Although you will need to be sure that **Compass** is running along with your server, once it does run, the application should automatically generate a collection for you. 
 
 You will **not** need to create a collection or any documents within the GUI at any point.

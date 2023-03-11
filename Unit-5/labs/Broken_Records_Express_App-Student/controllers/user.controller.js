@@ -1,25 +1,22 @@
 //* This whole file is for Unit 6 Challenge
-const router = require('express');
+const router = require('express').Router();
 const User = require('../models/user.model'); 
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const secret = process.env;
 const expire = {expiresIn: 60 * 60 * 2};
 
-router.create('/signup', async (req, res) => {
+router.post('/signup', async (req, res) => {
 
     try {
-        
         let { userName, email, password } = req.body;
 
         const user = new User({
             userName: userName,
-            email: emails,
+            email: email,
             password: bcrypt(password, 10)
         });
-
         const newUser = await user.save();
-
         const token = jwt.sign({id: user.id}, secret, expire);
 
         res.status(200).json({
@@ -33,13 +30,11 @@ router.create('/signup', async (req, res) => {
             msg: err.message
         });
     }
-
 });
 
 router.post('/login', async (req, res) => {
     
         const { userName, email, password } = req.body;
-
         let user;
 
         if(userName) {
@@ -63,5 +58,4 @@ router.post('/login', async (req, res) => {
             msg: err.message
         });
 });
-
 module.exports = router;

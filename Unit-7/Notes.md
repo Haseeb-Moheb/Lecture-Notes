@@ -106,3 +106,54 @@ const [ count, setCount ] = useState(0); // raw value
 const [ count, setCount ] = useState(() => 0); // CB Function
 ```
 - Callback functions renders initial value once.
+
+# useRef()
+- is a hook
+- values consist and don't cause re-renders of the page.
+- return only one item
+  - an object called "current"
+- must be imported in with `react`
+```jsx
+import { useRef } from 'react';
+```
+
+
+# React-Router-DOM
+`npm i react-router-dom`
+- Client-side routing
+- Installs
+**index.js**
+```js
+import { BrowserRouter } from 'react-router-dom';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>  // <-- ADDED
+      <App />
+    </BrowserRouter> // <-- ADDED
+  </React.StrictMode>
+);
+```
+**App.jsx**
+- Refactor
+
+```jsx
+return (
+    <div className="App">
+      <Routes>
+          <Route
+            path='/'
+            element={<Auth updateToken={updateToken} />}
+          />
+          <Route 
+            path='/movie'
+            element={<h2>Movie Section Placeholder</h2>}
+          />
+      </Routes>
+    </div>
+  );
+```
+- path: decalares which route to view
+- element: which component to display when a path is viewed.
+

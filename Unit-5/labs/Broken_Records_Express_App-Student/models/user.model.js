@@ -1,17 +1,17 @@
 //* This whole file is for Unit 6 Challenge
-const mongoose;
+const mongoose = require('mongoose');
 
 const User = new mongoose.Schema({ 
-    userName = {
+    userName: {
         type: String,
         required: true,
         unique: true
     },
-    email = {
+    email: {
         type: String,
         required: true
     },
-    password = {
+    password: {
         type: String,
         required: true
     }
