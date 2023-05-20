@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Signup from './signup/Signup'
-import { Button, Col, Container, Row } from 'reactstrap';
+import { Button, Col, Container, Row } from 'reactstrap'; 
 import Login from './login/Login';
 
 function Auth(props) {
