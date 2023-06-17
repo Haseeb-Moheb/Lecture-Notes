@@ -5,7 +5,7 @@ const { Console } = require('console');
 const fsPath = './helpers/db.json';
 
 // GET All
-router.get('/get-all', (req, res) => {
+router.get('/get-all', (req, res) => { 
     try {
         
         // console.log(db);
