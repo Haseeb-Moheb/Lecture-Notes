@@ -65,7 +65,7 @@ function MovieTable(props) {
                     </th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody> 
                 {
                 props.movies.map(movie => (
                 <tr key={movie._id}>

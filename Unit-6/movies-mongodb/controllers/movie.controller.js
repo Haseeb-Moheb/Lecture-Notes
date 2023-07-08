@@ -21,7 +21,7 @@ router.post('/', validateSession, async (req, res) => {
 
         //2. Create a new object using our model
         const movie = new Movie({
-            title, genre, rating, length, releaseYear,
+            title, genre, rating, length, releaseYear, 
             owner_id: req.user._id
         });
 

@@ -23,6 +23,7 @@ function MovieIndex(props) {
             const res = await fetch(url, requestOptions);
             const data = await res.json();
             // console.log(data.movies);
+            
             setMovies(data.movies);
         } catch (err) {
             console.error(err);
