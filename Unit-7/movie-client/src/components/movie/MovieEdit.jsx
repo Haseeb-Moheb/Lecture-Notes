@@ -43,9 +43,7 @@ function MovieEdit(props) {
             </>
         )
     }
-
     const url = `${baseURL}/movie/${id}`;
-
     const fetchMovie = async () => {
         
         const requestOptions = {
@@ -54,7 +52,6 @@ function MovieEdit(props) {
                 "Authorization": props.token
             })
         }
-
         try {
             const res = await fetch(url, requestOptions);
             const data = await res.json();
@@ -74,7 +71,6 @@ function MovieEdit(props) {
             console.error(error);
         }
     }
-
     useEffect(() => {
         if(props.token) {
             fetchMovie();
@@ -91,7 +87,6 @@ function MovieEdit(props) {
             length: movieLength,
             releaseYear: movieReleased
         })
-
         const requestOptions = {
             headers: new Headers({
                 "Authorization": props.token,
@@ -100,7 +95,6 @@ function MovieEdit(props) {
             body: bodyObj,
             method: 'PATCH'
         }
-
         try {
             const res = await fetch(url, requestOptions);
             const data = await res.json();
@@ -110,7 +104,6 @@ function MovieEdit(props) {
             console.error(error);
         }
     }
-
     return (
         <>
             <h1 style={{
@@ -196,5 +189,4 @@ function MovieEdit(props) {
         </>
     )
 }
-
 export default MovieEdit
