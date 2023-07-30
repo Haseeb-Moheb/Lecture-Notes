@@ -7,14 +7,13 @@
         "rating": string, required
         "length": number, required
         "releaseYear": number
-        
+    
     Note:
         Consider how the User model was created.
 */
-
 const mongoose = require('mongoose');
-
 const MovieSchema = new mongoose.Schema({
+
     title: {
         type: String,
         required: true
@@ -34,5 +33,4 @@ const MovieSchema = new mongoose.Schema({
         type: Number
     }
 });
-
 module.exports = mongoose.model("Movie", MovieSchema);

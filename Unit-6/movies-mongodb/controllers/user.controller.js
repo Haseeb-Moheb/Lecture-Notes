@@ -4,11 +4,9 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
 // const testingBcrypt = password => {
-
-//     let encrypt = bcrypt.hashSync(password,13);// needs salt value to work.
-//     console.log("Encrypt: ", encrypt);
+// let encrypt = bcrypt.hashSync(password,13);// needs salt value to work.
+// console.log("Encrypt: ", encrypt);
 // }
-
 // testingBcrypt("myPassword");
 // testingBcrypt("myPassword");
 // testingBcrypt("new_password");
@@ -17,7 +15,6 @@ router.post('/signup', async (req, res) => {
     // res.send('Connected');
 
     try {
-        
         // Creating a new object based off the Model Schema.
         const user = new User({
             firstName: req.body.first,
@@ -48,7 +45,6 @@ router.post('/signup', async (req, res) => {
         })
     }
 });
-
 /* 
 ! Challenge:
     - Create a '/login' route POST
@@ -57,12 +53,10 @@ router.post('/signup', async (req, res) => {
     - Full URL: 
         localhost:4000/user/login
 */
-
 router.post('/login', async (req, res) => {
     // const email = req.body.email;
 
     try {
-
         //1. Capture data provided by the user (req.body)
         const { email, password } = req.body;
 

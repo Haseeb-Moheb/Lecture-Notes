@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
-
 const UserSchema = new mongoose.Schema({ 
+    
     // columns for our document
+
     firstName: {
         type: String, // What data type this is expecting
         require: true

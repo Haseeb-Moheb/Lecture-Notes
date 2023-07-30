@@ -10,7 +10,6 @@ const errorResponse = (res, error) => {
         })
     )
 }
-
 //TODO POST
 router.post('/', validateSession, async (req, res) => {
     try {
@@ -42,7 +41,6 @@ router.post('/', validateSession, async (req, res) => {
         errorResponse(res, err);
     }
 });
-
 //TODO GET One
 /* 
 !   Challenge
@@ -73,7 +71,6 @@ router.get('/:id', async (req, res) => {
         errorResponse(res, err);
     }
 });
-
 //TODO Get All
 /* 
 !   Challenge

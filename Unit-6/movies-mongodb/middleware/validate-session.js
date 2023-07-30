@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken'); 
 const User = require('../models/user.model');
-
 const validateSession = async (req, res, next) => {
+    
     // Middleware still has access to the request, response, and requires the next() function to move past it.
     //* remember the timeLog() helper within ToDo_List
 
@@ -31,5 +31,4 @@ const validateSession = async (req, res, next) => {
         res.json({message: err.message});
     }
 }
-
 module.exports = validateSession;

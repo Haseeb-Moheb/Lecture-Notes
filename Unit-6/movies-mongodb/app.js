@@ -19,10 +19,8 @@ db.once("open", () => console.log(`Connected: ${DBURL}`)); // event listener to 
 
 app.use(express.json()); // added to allow us to accept JSON data from the body of our client.
 app.use(cors());
-
 app.use('/user', userController);
 // app.use(validateSession); //* requires validation for any controller under this app.use()
 app.use('/movie', movieController);
-
 
 app.listen(PORT, () => console.log(`Movie Server Running on Port: ${PORT}`));
